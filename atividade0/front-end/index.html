@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+
+  <meta name="language" content="en-EN" />
+  <meta name="author" content="Irfan Maulana" />
+  <title>Oficina</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header class="hero is-light">
+    <div class="hero-head">
+      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+          <a class="navbar-item is--brand">
+            <img class="navbar-brand-logo" src="/bulma-admin-dashboard-template/logo.png" alt="Bulma Admin Template logo">
+          </a>
+          <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Inicio</a>
+
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+
+
+        <div class="navbar-menu navbar-end" id="navMenu">
+          <a class="navbar-item is-tab is-hidden-tablet is-active">Inicio</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <figure class="image is-32x32" style="margin-right:.5em;">
+                <img src="https://avatars1.githubusercontent.com/u/7221389?v=4&s=32">
+              </figure>
+              Usuario
+            </a>
+
+            <div class="navbar-dropdown is-right">
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-user-o"></i>
+                  </span>
+                  Perfil
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-power-off"></i>
+                  </span>
+                  Sair
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="columns">
+      <aside class="column is-2 aside">
+        <nav class="menu">
+          <p class="menu-label">
+            Geral
+          </p>
+          <ul class="menu-list">
+            <li><a class="is-active" href="#"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Dashboard</a></li>
+          </ul>
+          <p class="menu-label">
+            Administração
+          </p>
+          <ul class="menu-list">
+            <li><a href="/bulma-admin-dashboard-template/forms.html"><span class="icon is-small"><i class="fa fa-pencil-square-o"></i></span> Usuarios</a></li>
+            <li><a href="/bulma-admin-dashboard-template/ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> Clientes</a></li>
+            <li><a href="/bulma-admin-dashboard-template/tables.html"><span class="icon is-small"><i class="fa fa-table"></i></span> Funcionarios</a></li>
+            <li><a href="/bulma-admin-dashboard-template/presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Ordem de Servicos</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="column main">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Geral</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
+          </ul>
+        </nav>
+
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div class="title has-text-primary"><i class="fa fa-tachometer"></i> Dashboard</div>
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item">
+              <button type="button" class="button is-small">
+                Maio 6, 2018
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-multiline">
+          <div class="column">
+            <div class="box notification is-primary">
+              <div class="heading">Top Seller Total</div>
+              <div class="title">56,950</div>
+              <div class="level">
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Sales $</div>
+                    <div class="title is-5">250K</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Overall $</div>
+                    <div class="title is-5">750K</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Sales %</div>
+                    <div class="title is-5">25%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box notification is-warning">
+              <div class="heading">Revenue / Expenses</div>
+              <div class="title">55% / 45%</div>
+              <div class="level">
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Rev Prod $</div>
+                    <div class="title is-5">30%</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Rev Serv $</div>
+                    <div class="title is-5">25%</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Exp %</div>
+                    <div class="title is-5">45%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box notification is-info">
+              <div class="heading">Feedback Activity</div>
+              <div class="title">78% &uarr;</div>
+              <div class="level">
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Pos</div>
+                    <div class="title is-5">1560</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Neg</div>
+                    <div class="title is-5">368</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Pos/Neg %</div>
+                    <div class="title is-5">77% / 23%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box notification is-danger">
+              <div class="heading">Orders / Returns</div>
+              <div class="title">75% / 25%</div>
+              <div class="level">
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Orders $</div>
+                    <div class="title is-5">425K</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Returns $</div>
+                    <div class="title is-5">106K</div>
+                  </div>
+                </div>
+                <div class="level-item">
+                  <div class="">
+                    <div class="heading">Success %</div>
+                    <div class="title is-5">+ 28,5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="/bulma-admin-dashboard-template/dist/build.js"></script>
+
+</body>
+
+</html>
