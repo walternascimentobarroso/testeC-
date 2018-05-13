@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
-  <title>Oficina - Clientes</title>
+  <title>Oficina - Especialidades</title>
   <meta name="theme-color" content="#00d1b2">
   <link rel="shortcut icon" href="img/favicon.png">
 
@@ -68,21 +68,21 @@
 
   <div class="wrapper">
     <div class="columns">
-            <aside class="column is-2 aside" id="includedContent"></aside>
+        <aside class="column is-2 aside" id="includedContent"></aside>
 
       <main class="column main">
         <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
           <ul>
             <li><a href="/">Administração</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Formulário de Cliente</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Formulário de Especialidade</a></li>
           </ul>
         </nav>
 
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-              <div class="title has-text-primary"><i class="fas fa-users"></i> Formulário de Cliente</div>
+              <div class="title has-text-primary"><i class="fas fa-screwdriver"></i> Formulário de Especialidade</div>
             </div>
           </div>
           <div class="level-right">
@@ -96,38 +96,18 @@
         <div class="card">
 
         <header class="card-header">
-        <p class="card-header-title">Cliente</p>
+        <p class="card-header-title">Especialidade</p>
         </header>
         <div class="card-content">
         <div class="content">
 
 
             <div class="field">
-            <label class="label">Nome</label>
+            <label class="label">Descrição</label>
             <div class="control has-icons-left">
-            <input class="input is-rounded" type="text" placeholder="Nome Completo">
+            <input class="input is-rounded" type="text" placeholder="Descrição da especialidade">
             <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
-            </span>
-            </div>
-            </div>
-
-            <div class="field">
-            <label class="label">Telefone</label>
-            <div class="control has-icons-left">
-            <input class="input is-rounded" type="text" placeholder="Nome Completo">
-            <span class="icon is-small is-left">
-            <i class="fas fa-phone"></i>
-            </span>
-            </div>
-            </div>
-
-            <div class="field">
-            <label class="label">Celular</label>
-            <div class="control has-icons-left">
-            <input class="input is-rounded" type="text" placeholder="Nome Completo">
-            <span class="icon is-small is-left">
-            <i class="fas fa-mobile-alt"></i>
             </span>
             </div>
             </div>
@@ -137,7 +117,7 @@
             <button class="button is-link">Salvar</button>
             </div>
             <div class="control">
-            <a href="clientes.html" class="button is-outlined">Cancelar</a>
+            <a href="especialidades.html" class="button is-outlined">Cancelar</a>
             </div>
             </div>
 
@@ -146,13 +126,14 @@
         </div>
       </main>
     </div>
-  </div>
+  </div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script> 
   $(function(){
       $("#includedContent").load("aside.html"); 
   });
   </script> 
+  
 </body>
 
 </html>

@@ -2,133 +2,129 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
-  <title>Oficina</title>
-  <meta name="theme-color" content="#00d1b2">
-  <link rel="shortcut icon" href="img/favicon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+    <title>Oficina</title>
+    <meta name="theme-color" content="#00d1b2">
+    <link rel="shortcut icon" href="img/favicon.png">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <header class="hero is-light">
-    <div class="hero-head">
-      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+    <header class="hero is-light">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
 
-          <a class="navbar-item is--brand">
-            <img class="navbar-brand-logo" src="img/logo.png" alt="logo">
-          </a>
-          <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Inicio</a>
+                    <a class="navbar-item is--brand">
+                        <img class="navbar-brand-logo" src="img/logo.png" alt="logo">
+                    </a>
+                    <a class="navbar-item is-tab is-hidden-mobile is-active">
+                        <span class="icon is-medium">
+                            <i class="fa fa-home"></i>
+                        </span>Inicio</a>
 
-          <button class="button navbar-burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+                    <button class="button navbar-burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
+                </div>
+
+
+                <div class="navbar-menu navbar-end" id="navMenu">
+                    <a class="navbar-item is-tab is-hidden-tablet is-active">Inicio</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="img/user.png">
+                            </figure>
+                            Usuario
+                        </a>
+
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-o"></i>
+                                </span>
+                                Perfil
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-power-off"></i>
+                                </span>
+                                Sair
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+    </header>
 
+    <div class="wrapper">
+        <div class="columns">
+            <aside class="column is-2 aside" id="includedContent"></aside>
 
-        <div class="navbar-menu navbar-end" id="navMenu">
-          <a class="navbar-item is-tab is-hidden-tablet is-active">Inicio</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              <figure class="image is-32x32" style="margin-right:.5em;">
-                <img src="img/user.png">
-              </figure>
-              Usuario
-            </a>
+            <main class="column main">
+                <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="#">Geral</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#" aria-current="page">Dashboard</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="navbar-dropdown is-right">
-                <a class="navbar-item">
-                  <span class="icon is-small">
-                    <i class="fa fa-user-o"></i>
-                  </span>
-                  Perfil
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  <span class="icon is-small">
-                    <i class="fa fa-power-off"></i>
-                  </span>
-                  Sair
-                </a>
-            </div>
-          </div>
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="title has-text-primary">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard</div>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <button type="button" class="button is-small">
+                                Maio 6, 2018
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Bem Vindo
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Sistema de controle de ordem de serviço.
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
         </div>
-      </nav>
     </div>
-  </header>
-
-  <div class="wrapper">
-    <div class="columns">
-      <aside class="column is-2 aside">
-        <nav class="menu">
-          <p class="menu-label">
-            Geral
-          </p>
-          <ul class="menu-list">
-            <li><a class="is-active" href="index.html"><span class="icon is-small"><i class="fas fa-tachometer-alt"></i></span> Dashboard</a></li>
-          </ul>
-          <p class="menu-label">
-            Administração
-          </p>
-          <ul class="menu-list">
-            <li><a href="clientes.html"><span class="icon is-small"><i class="fas fa-users"></i></span> Clientes</a></li>
-            <li><a href="ui-elements.html"><span class="icon is-small"><i class="fa fa-desktop"></i></span> Clientes</a></li>
-            <li><a href="tables.html"><span class="icon is-small"><i class="fa fa-table"></i></span> Funcionarios</a></li>
-            <li><a href="presentations.html"><span class="icon is-small"><i class="fa fa-bar-chart"></i></span> Ordem de Servicos</a></li>
-          </ul>
-        </nav>
-      </aside>
-
-      <main class="column main">
-        <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
-          <ul>
-            <li><a href="#">Geral</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
-          </ul>
-        </nav>
-
-        <div class="level">
-          <div class="level-left">
-            <div class="level-item">
-              <div class="title has-text-primary"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
-            </div>
-          </div>
-          <div class="level-right">
-            <div class="level-item">
-              <button type="button" class="button is-small">
-                Maio 6, 2018
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Bem Vindo
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              Sistema de controle de ordem de serviço.
-              <br>
-            </div>
-          </div>
-        </div>
-
-      </main>
-    </div>
-  </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+        $(function () {
+            $("#includedContent").load("aside.html");
+        });
+    </script>
 </body>
 
 </html>

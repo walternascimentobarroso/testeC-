@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+  <title>Oficina - Descontos</title>
+  <meta name="theme-color" content="#00d1b2">
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <header class="hero is-light">
+    <div class="hero-head">
+      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+          <a class="navbar-item is--brand">
+            <img class="navbar-brand-logo" src="img/logo.png" alt="logo">
+          </a>
+          <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Inicio</a>
+
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+
+
+        <div class="navbar-menu navbar-end" id="navMenu">
+          <a class="navbar-item is-tab is-hidden-tablet is-active">Inicio</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <figure class="image is-32x32" style="margin-right:.5em;">
+                <img src="img/user.png">
+              </figure>
+              Usuario
+            </a>
+
+            <div class="navbar-dropdown is-right">
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-user-o"></i>
+                  </span>
+                  Perfil
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  <span class="icon is-small">
+                    <i class="fa fa-power-off"></i>
+                  </span>
+                  Sair
+                </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="columns">
+            <aside class="column is-2 aside" id="includedContent"></aside>
+
+      <main class="column main">
+        <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="/">Administração</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Descontos</a></li>
+          </ul>
+        </nav>
+
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div class="title has-text-primary"><i class="fas fa-hand-holding-usd"></i> Lista de Descontos</div>
+            </div>
+          </div>
+          <div class="level-right">
+            <div class="level-item">
+              <button type="button" class="button is-small">
+                Maio 6, 2018
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+
+        <header class="card-header">
+        <p class="card-header-title">Descontos</p>
+        </header>
+        <div class="card-content">
+        <div class="content">
+
+        <p><a href="descontos-form.html" class="button is-success is-outlined">
+            <span>Novo</span>
+            <span class="icon is-small">
+                <i class="fas fa-plus"></i>
+            </span>
+        </a></p>
+                    
+        <table class="table is-bordered is-fullwidth is-hoverable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Preço Total</th>
+                    <th>Desconto</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>De R$200,00 a R$ 1.000,00</td>
+                    <td>5%</td>
+                    <td>
+                        <a href="descontos-form.html" class="button is-warning is-outlined">
+                            <span>Edit</span>
+                            <span class="icon is-small">
+                                <i class="far fa-edit"></i>
+                            </span>
+                        </a>
+                        
+                        <a class="button is-danger is-outlined open-modal" data-register-id="1" data-register-name="De R$200,00 a R$ 1.000,00">
+                            <span>Delete</span>
+                            <span class="icon is-small">
+                                <i class="far fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Superior a R$ 1.000,00</td>
+                    <td>10%</td>
+                    <td>
+                        <a href="descontos-form.html" class="button is-warning is-outlined">
+                            <span>Edit</span>
+                            <span class="icon is-small">
+                                <i class="far fa-edit"></i>
+                            </span>
+                        </a>
+                        
+                        <a class="button is-danger is-outlined open-modal" data-register-id="2" data-register-name="Superior a R$ 1.000,00">
+                            <span>Delete</span>
+                            <span class="icon is-small">
+                                <i class="far fa-trash-alt"></i>
+                            </span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                <p class="modal-card-title">Remover Desconto</p>
+                <button class="delete close-modal" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <p>Tem certeza que deseja remover o desconto ?</p>
+                    <input id="idNameDrop" type="hidden" />
+                    <strong id="userNameDrop">Usuario</strong>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-danger send-action">Remover</button>
+                    <button class="button close-modal">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script> 
+  $(function(){
+      $("#includedContent").load("aside.html"); 
+  });
+  </script> 
+  <script>
+    $(function() {
+
+        function toggleModalClasses(event) {
+            var modal = $('.modal');
+            $('#userNameDrop').text($(this).data('register-name'));
+            $('#idNameDrop').val($(this).data('register-id'));
+            modal.toggleClass('is-active');
+            $('html').toggleClass('is-clipped');
+        };
+
+        $('.open-modal').click(toggleModalClasses);
+
+        $('.close-modal').click(toggleModalClasses);
+
+        $(".send-action").on('click', function(){
+            let id = $("#idNameDrop").val();
+            var url = "remover-cliente/" + id;
+            
+            toggleModalClasses();
+            
+            $.post(url)
+                .done(function (msg) {
+                    $("tbody").find("[data-register-id='" + id + "']").parent().parent().remove();
+                })
+                .fail(function (e) {
+                    console.log(e);
+                }
+            );
+        });
+    });
+  </script>
+
+</body>
+
+</html>

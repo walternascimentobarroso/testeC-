@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
-    <title>Oficina - Clientes</title>
+    <title>Oficina - Funcionários</title>
     <meta name="theme-color" content="#00d1b2">
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -81,7 +81,7 @@
                             <a href="/">Administração</a>
                         </li>
                         <li class="is-active">
-                            <a href="#" aria-current="page">Clientes</a>
+                            <a href="#" aria-current="page">Funcionários</a>
                         </li>
                     </ul>
                 </nav>
@@ -90,7 +90,7 @@
                     <div class="level-left">
                         <div class="level-item">
                             <div class="title has-text-primary">
-                                <i class="fas fa-users"></i> Lista de Clientes</div>
+                                <i class="fas fa-users-cog"></i> Lista de Funcionários</div>
                         </div>
                     </div>
                     <div class="level-right">
@@ -104,13 +104,13 @@
                 <div class="card">
 
                     <header class="card-header">
-                        <p class="card-header-title">Clientes</p>
+                        <p class="card-header-title">Funcionários</p>
                     </header>
                     <div class="card-content">
                         <div class="content">
 
                             <p>
-                                <a href="clientes-form.html" class="button is-success is-outlined">
+                                <a href="funcionarios-form.html" class="button is-success is-outlined">
                                     <span>Novo</span>
                                     <span class="icon is-small">
                                         <i class="fas fa-plus"></i>
@@ -123,24 +123,24 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Nome</th>
-                                        <th>Telefone</th>
+                                        <th>Função</th>
                                         <th>Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Joao da silva sauro</td>
-                                        <td>(95) 9 9999-9999</td>
+                                        <td>Carlos da silva ares</td>
+                                        <td>Gerente</td>
                                         <td>
-                                            <a href="clientes-form.html" class="button is-warning is-outlined">
+                                            <a href="funcionarios-form.html" class="button is-warning is-outlined">
                                                 <span>Edit</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-edit"></i>
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="1" data-register-name="Joao da silva sauro">
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="1" data-register-name="Carlos da silva ares">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -150,17 +150,17 @@
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Carlos pereira pereira</td>
-                                        <td>(95) 9 9999-9999</td>
+                                        <td>Elena chagas</td>
+                                        <td>Atendente</td>
                                         <td>
-                                            <a href="clientes-form.html" class="button is-warning is-outlined">
+                                            <a href="funcionarios-form.html" class="button is-warning is-outlined">
                                                 <span>Edit</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-edit"></i>
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="2" data-register-name="Carlos pereira pereira">
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="2" data-register-name="Elena chagas">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -170,17 +170,17 @@
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Maria da silva zinha</td>
-                                        <td>(95) 9 9999-9999</td>
+                                        <td>Antunes nunes</td>
+                                        <td>Mecânico</td>
                                         <td>
-                                            <a href="clientes-form.html" class="button is-warning is-outlined">
+                                            <a href="funcionarios-form.html" class="button is-warning is-outlined">
                                                 <span>Edit</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-edit"></i>
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="3" data-register-name="Maria da silva zinha">
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="3" data-register-name="Antunes nunes">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -195,11 +195,11 @@
                                 <div class="modal-background"></div>
                                 <div class="modal-card">
                                     <header class="modal-card-head">
-                                        <p class="modal-card-title">Remover Cliente</p>
+                                        <p class="modal-card-title">Remover Funcionário</p>
                                         <button class="delete close-modal" aria-label="close"></button>
                                     </header>
                                     <section class="modal-card-body">
-                                        <p>Tem certeza que deseja remover o cliente ?</p>
+                                        <p>Tem certeza que deseja remover o funcionário ?</p>
                                         <input id="idNameDrop" type="hidden" />
                                         <strong id="userNameDrop">Usuario</strong>
                                     </section>
