@@ -91,7 +91,7 @@
       <main class="column main">
         <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
           <ul>
-            <li><a href="#">Administração</a></li>
+            <li><a href="/">Administração</a></li>
             <li class="is-active"><a href="#" aria-current="page">Clientes</a></li>
           </ul>
         </nav>
@@ -118,7 +118,7 @@
         <div class="card-content">
         <div class="content">
 
-        <p><a class="button is-success is-outlined">
+        <p><a href="clientes-form.html" class="button is-success is-outlined">
             <span>Novo</span>
             <span class="icon is-small">
                 <i class="fas fa-plus"></i>
@@ -140,7 +140,7 @@
                     <td>Joao da silva sauro</td>
                     <td>(95) 9 9999-9999</td>
                     <td>
-                        <a class="button is-warning is-outlined">
+                        <a href="clientes-form.html" class="button is-warning is-outlined">
                             <span>Edit</span>
                             <span class="icon is-small">
                                 <i class="far fa-edit"></i>
@@ -160,7 +160,7 @@
                     <td>Carlos pereira pereira</td>
                     <td>(95) 9 9999-9999</td>
                     <td>
-                        <a class="button is-warning is-outlined">
+                        <a href="clientes-form.html" class="button is-warning is-outlined">
                             <span>Edit</span>
                             <span class="icon is-small">
                                 <i class="far fa-edit"></i>
@@ -180,7 +180,7 @@
                     <td>Maria da silva zinha</td>
                     <td>(95) 9 9999-9999</td>
                     <td>
-                        <a class="button is-warning is-outlined">
+                        <a href="clientes-form.html" class="button is-warning is-outlined">
                             <span>Edit</span>
                             <span class="icon is-small">
                                 <i class="far fa-edit"></i>
@@ -226,8 +226,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(function() {
-        // $("a[href*=ModalRestore]").on('click', function(){
-            // });
+
         function toggleModalClasses(event) {
             var modal = $('.modal');
             $('#userNameDrop').text($(this).data('register-name'));
