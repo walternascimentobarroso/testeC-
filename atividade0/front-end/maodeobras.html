@@ -17,64 +17,13 @@
 
 <body>
 
-    <header class="hero is-light">
-        <div class="hero-head">
-            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-
-                    <a class="navbar-item is--brand">
-                        <img class="navbar-brand-logo" src="img/logo.png" alt="logo">
-                    </a>
-                    <a class="navbar-item is-tab is-hidden-mobile is-active">
-                        <span class="icon is-medium">
-                            <i class="fa fa-home"></i>
-                        </span>Inicio</a>
-
-                    <button class="button navbar-burger" data-target="navMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-
-                </div>
-
-
-                <div class="navbar-menu navbar-end" id="navMenu">
-                    <a class="navbar-item is-tab is-hidden-tablet is-active">Inicio</a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            <figure class="image is-32x32" style="margin-right:.5em;">
-                                <img src="img/user.png">
-                            </figure>
-                            Usuario
-                        </a>
-
-                        <div class="navbar-dropdown is-right">
-                            <a class="navbar-item">
-                                <span class="icon is-small">
-                                    <i class="fa fa-user-o"></i>
-                                </span>
-                                Perfil
-                            </a>
-                            <hr class="navbar-divider">
-                            <a class="navbar-item">
-                                <span class="icon is-small">
-                                    <i class="fa fa-power-off"></i>
-                                </span>
-                                Sair
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <header class="hero is-light" id="includedHeader"></header>
 
     <div class="wrapper">
         <div class="columns">
             <aside class="column is-2 aside" id="includedContent"></aside>
 
-            <main class="column main">
+            <main class="column main" data-active="maodeobras">
                 <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
                     <ul>
                         <li>
@@ -142,7 +91,7 @@
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="1" data-register-name="Motor">                                                    
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="1" data-register-name="Motor">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -184,7 +133,7 @@
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="3" data-register-name="Freio">                                                    
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="3" data-register-name="Freio">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -205,7 +154,7 @@
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="4" data-register-name="Parte Elétrica">                                                    
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="4" data-register-name="Parte Elétrica">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>
@@ -226,7 +175,7 @@
                                                 </span>
                                             </a>
 
-                                            <a class="button is-danger is-outlined open-modal" data-register-id="5" data-register-name="Parte Eletrônica (i)">                                                    
+                                            <a class="button is-danger is-outlined open-modal" data-register-id="5" data-register-name="Parte Eletrônica (i)">
                                                 <span>Delete</span>
                                                 <span class="icon is-small">
                                                     <i class="far fa-trash-alt"></i>

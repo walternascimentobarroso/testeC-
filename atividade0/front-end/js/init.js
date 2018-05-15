@@ -1,5 +1,10 @@
 $(function () {
-    $("#includedContent").load("aside.html");
+    $("#includedHeader").load("header.html");
+    $("#includedContent").load("aside.html", function() {
+        $( "li a ").removeClass("is-active");
+        var menuActive = $('main').data('active');
+        $( "li a[href='" + menuActive + ".html'] ").addClass("is-active");
+    });
 
     function toggleModalClasses(event) {
         var modal = $('.modal');
