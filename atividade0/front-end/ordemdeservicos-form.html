@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
-    <title>Oficina - Especialidades</title>
+    <title>Oficina - Ordem de Serviços</title>
     <meta name="theme-color" content="#00d1b2">
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -81,10 +81,10 @@
                             <a href="/">Administração</a>
                         </li>
                         <li>
-                            <a href="especialidades.html">Especialidades</a>
+                            <a href="ordemdeservicos.html">Ordem de Serviços</a>
                         </li>
                         <li class="is-active">
-                            <a href="#" aria-current="page">Formulário de Especialidade</a>
+                            <a href="#" aria-current="page">Formulário de Ordem de Serviço</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,7 +93,7 @@
                     <div class="level-left">
                         <div class="level-item">
                             <div class="title has-text-primary">
-                                <i class="fas fa-screwdriver"></i> Formulário de Especialidade</div>
+                                <i class="fas fa-cogs"></i> Formulário de Ordem de Serviço</div>
                         </div>
                     </div>
                     <div class="level-right">
@@ -107,7 +107,7 @@
                 <div class="card">
 
                     <header class="card-header">
-                        <p class="card-header-title">Especialidade</p>
+                        <p class="card-header-title">Ordem de Serviço</p>
                     </header>
                     <div class="card-content">
                         <div class="content">
@@ -116,10 +116,80 @@
                             <div class="field">
                                 <label class="label">Descrição</label>
                                 <div class="control has-icons-left">
-                                    <input class="input is-rounded" type="text" placeholder="Descrição da especialidade">
+                                    <input class="input is-rounded" type="text" placeholder="Descrição da ordem de serviço">
                                     <span class="icon is-small is-left">
                                         <i class="far fa-comment-alt"></i>
                                     </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Cliente</label>
+                                <div class="control has-icons-left">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select>
+                                            <option selected>Joao da silva sauro</option>
+                                            <option>Carlos pereira pereira</option>
+                                            <option>Maria da silva zinha</option>
+                                        </select>
+                                    </div>
+                                    <div class="icon is-small is-left">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Funcionário</label>
+                                <div class="control has-icons-left">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select>
+                                            <option selected>Carlos da silva ares</option>
+                                            <option>Elena chagas</option>
+                                            <option>Antunes nunes)</option>
+                                        </select>
+                                    </div>
+                                    <div class="icon is-small is-left">
+                                        <i class="fas fa-users-cog"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Serviço</label>
+                                <div class="control has-icons-left">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select>
+                                            <option selected>Limpeza</option>
+                                            <option>Manutenção</option>
+                                            <option>Teste</option>
+                                        </select>
+                                    </div>
+                                    <div class="icon is-small is-left">
+                                        <i class="fas fa-wrench"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Desconto</label>
+                                <div class="control has-icons-left">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select>
+                                            <option selected>De R$200,00 a R$ 1.000,00</option>
+                                            <option>Superior a R$ 1.000,00</option>
+                                        </select>
+                                    </div>
+                                    <div class="icon is-small is-left">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Observação</label>
+                                <div class="control">
+                                    <textarea class="textarea" type="text" placeholder="Observações sobre a Ordem de Serviço"></textarea>
                                 </div>
                             </div>
 
@@ -128,7 +198,7 @@
                                     <button class="button is-link">Salvar</button>
                                 </div>
                                 <div class="control">
-                                    <a href="especialidades.html" class="button is-outlined">Cancelar</a>
+                                    <a href="ordemdeservicos.html" class="button is-outlined">Cancelar</a>
                                 </div>
                             </div>
 

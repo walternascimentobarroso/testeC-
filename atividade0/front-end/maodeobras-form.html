@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
-    <title>Oficina - Especialidades</title>
+    <title>Oficina - Mão de Obras</title>
     <meta name="theme-color" content="#00d1b2">
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -81,10 +81,10 @@
                             <a href="/">Administração</a>
                         </li>
                         <li>
-                            <a href="especialidades.html">Especialidades</a>
+                            <a href="maodeobras.html">Mão de Obras</a>
                         </li>
                         <li class="is-active">
-                            <a href="#" aria-current="page">Formulário de Especialidade</a>
+                            <a href="#" aria-current="page">Formulário de Mão de Obra</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,7 +93,7 @@
                     <div class="level-left">
                         <div class="level-item">
                             <div class="title has-text-primary">
-                                <i class="fas fa-screwdriver"></i> Formulário de Especialidade</div>
+                                <i class="fas fa-hands-helping"></i> Formulário de Mão de Obra</div>
                         </div>
                     </div>
                     <div class="level-right">
@@ -107,18 +107,39 @@
                 <div class="card">
 
                     <header class="card-header">
-                        <p class="card-header-title">Especialidade</p>
+                        <p class="card-header-title">Mão de Obra</p>
                     </header>
                     <div class="card-content">
                         <div class="content">
 
 
                             <div class="field">
+                                <label class="label">Código</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-rounded" type="text" placeholder="Código">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-barcode"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
                                 <label class="label">Descrição</label>
                                 <div class="control has-icons-left">
-                                    <input class="input is-rounded" type="text" placeholder="Descrição da especialidade">
+                                    <input class="input is-rounded" type="text" placeholder="Descrição da mao de obra">
                                     <span class="icon is-small is-left">
                                         <i class="far fa-comment-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="field">
+                                <label class="label">Preço por Hora</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-rounded" type="number" placeholder="00,00">
+                                    <span class="icon is-small is-left">
+                                        R$
                                     </span>
                                 </div>
                             </div>
@@ -128,7 +149,7 @@
                                     <button class="button is-link">Salvar</button>
                                 </div>
                                 <div class="control">
-                                    <a href="especialidades.html" class="button is-outlined">Cancelar</a>
+                                    <a href="maodeobras.html" class="button is-outlined">Cancelar</a>
                                 </div>
                             </div>
 
