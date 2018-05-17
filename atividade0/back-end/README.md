@@ -1,3 +1,13 @@
+#util
+
+dotnet restore
+
+dotnet ef dbcontext scaffold "Server=localhost;User Id=root;Password=123;Database=oficina" "Pomelo.EntityFrameworkCore.MySql" -c MyDbContext
+
+dotnet ef dbcontext scaffold "Server=localhost;User Id=root;Password=123;Database=eftests" "Pomelo.EntityFrameworkCore.MySql"
+
+dotnet run
+
 # Welcome to ASP.NET Core
 
 We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
