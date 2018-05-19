@@ -23,7 +23,15 @@ namespace back_end
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors(options =>
+            {
+            options.AddPolicy("CorsPolicy",
+                builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials()
+            .Build());
+            });
             services.AddTransient<AppDb>(_ => new AppDb());
             services.AddMvc();
         }
@@ -31,9 +39,7 @@ namespace back_end
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseCors(
-                options => options.WithOrigins("http://localhost:8080").AllowAnyMethod()
-            );
+            app.UseCors("CorsPolicy");
 
             if (env.IsDevelopment())
             {

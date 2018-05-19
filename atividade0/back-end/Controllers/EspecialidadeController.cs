@@ -5,9 +5,9 @@ using back_end.Models;
 namespace back_end.Controllers
 {
     [Route("api/[controller]")]
-    public class AsyncController : Controller
+    public class EspecialidadeController : Controller
     {
-        // GET api/async
+        // GET api/especialidade
         [HttpGet]
         public async Task<IActionResult> GetLatest()
         {
@@ -20,7 +20,7 @@ namespace back_end.Controllers
             }
         }
 
-        // GET api/async/5
+        // GET api/especialidade/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOne(int id)
         {
@@ -35,7 +35,7 @@ namespace back_end.Controllers
             }
         }
 
-        // POST api/async
+        // POST api/especialidade
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Especialidade body)
         {
@@ -48,7 +48,7 @@ namespace back_end.Controllers
             }
         }
 
-        // PUT api/async/5
+        // PUT api/especialidade/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOne(int id, [FromBody]Especialidade body)
         {
@@ -65,7 +65,7 @@ namespace back_end.Controllers
             }
         }
 
-        // DELETE api/async/5
+        // DELETE api/especialidade/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOne(int id)
         {
@@ -81,7 +81,7 @@ namespace back_end.Controllers
             }
         }
 
-        // DELETE api/async
+        // DELETE api/especialidade
         [HttpDelete]
         public async Task<IActionResult> DeleteAll()
         {

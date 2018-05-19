@@ -58,7 +58,7 @@ namespace back_end.Models
         {
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@id",
+                ParameterName = "@descricao",
                 DbType = DbType.String,
                 Value = descricao,
             });

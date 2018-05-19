@@ -20,7 +20,7 @@ $(function () {
 
     $(".send-action").on('click', function () {
         let id = $("#idNameDrop").val();
-        var url = "http://localhost:5000/api/async/" + id;
+        var url = "http://localhost:5000/api/especialidade/" + id;
 
         toggleModalClasses();
 
@@ -35,7 +35,7 @@ $(function () {
     });
 
     if ($('table').length) {
-        $.get("http://localhost:5000/api/async").done(function (dados) {
+        $.get("http://localhost:5000/api/especialidade").done(function (dados) {
             dados.forEach(function (valor) {
                 var tr = document.createElement('tr');
 
@@ -51,7 +51,7 @@ $(function () {
 
                 var tdacao = document.createElement('td');
 
-                tdacao.innerHTML = `<a href="especialidades-form.html" class="button is-warning is-outlined">
+                tdacao.innerHTML = `<a href="especialidades-form.html?${valor.id}" class="button is-warning is-outlined">
                 <span>Edit</span>
                 <span class="icon is-small">
                     <i class="far fa-edit"></i>
@@ -73,18 +73,39 @@ $(function () {
 
     $("form").on("submit", function (event) {
         event.preventDefault();
-        var datastring = $(this).serialize();
-         var url = "http://localhost:5000/api/async";
-         $.ajax({
-             url: url,
-             method: "POST",
-             data: datastring,
-             dataType: "json"
-         }).done(function (msg) {
-             window.location.href = "http://localhost:8080/especialidades.html";
-         }).fail(function (e) {
-             console.log(e);
-         });
-     });
-    
+        var url = location.href;
+        var parametrosDaUrl = url.split("?")[1];
+        if (parametrosDaUrl) {
+            var datastring = $(this).serialize();
+            var url = "http://localhost:5000/api/especialidade" + parametrosDaUrl;
+            $.ajax({
+                url: url,
+                method: "PUT",
+                data: datastring,
+                contentType: "application/json",
+                crossDomain: true,
+                dataType: "json"
+            }).done(function (msg) {
+                window.location.href = "http://localhost:8080/especialidades.html";
+            }).fail(function (e) {
+                console.log(e);
+            });
+        } else {
+            var datastring = $(this).serialize();
+            var url = "http://localhost:5000/api/especialidade";
+            $.ajax({
+                url: url,
+                method: "POST",
+                data: datastring,
+                contentType: "application/json",
+                crossDomain: true,
+                dataType: "json"
+            }).done(function (msg) {
+                window.location.href = "http://localhost:8080/especialidades.html";
+            }).fail(function (e) {
+                console.log(e);
+            });
+        }
+    });
+
 });
