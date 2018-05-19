@@ -6,19 +6,19 @@ using MySql.Data.MySqlClient;
 
 namespace back_end.Models
 {
-    public class EspecialidadeQuery
+    public class MaodeobraQuery
     {
 
         public readonly AppDb Db;
-        public EspecialidadeQuery(AppDb db)
+        public MaodeobraQuery(AppDb db)
         {
             Db = db;
         }
 
-        public async Task<Especialidade> FindOneAsync(int id)
+        public async Task<Maodeobra> FindOneAsync(int id)
         {
             var cmd = Db.Connection.CreateCommand() as MySqlCommand;
-            cmd.CommandText = @"SELECT * FROM `especialidade` WHERE `id` = @id";
+            cmd.CommandText = @"SELECT * FROM `maodeobra` WHERE `id` = @id";
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@id",
@@ -29,10 +29,10 @@ namespace back_end.Models
             return result.Count > 0 ? result[0] : null;
         }
 
-        public async Task<List<Especialidade>> LatestPostsAsync()
+        public async Task<List<Maodeobra>> LatestPostsAsync()
         {
             var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT * FROM `especialidade` ORDER BY `id` DESC LIMIT 10;";
+            cmd.CommandText = @"SELECT * FROM `maodeobra` ORDER BY `id` DESC LIMIT 10;";
             return await ReadAllAsync(await cmd.ExecuteReaderAsync());
         }
 
@@ -42,7 +42,7 @@ namespace back_end.Models
             try
             {
                 var cmd = Db.Connection.CreateCommand();
-                cmd.CommandText = @"DELETE FROM `especialidade`";
+                cmd.CommandText = @"DELETE FROM `maodeobra`";
                 await cmd.ExecuteNonQueryAsync();
                 await txn.CommitAsync();
             }
@@ -53,17 +53,19 @@ namespace back_end.Models
             }
         }
 
-        private async Task<List<Especialidade>> ReadAllAsync(DbDataReader reader)
+        private async Task<List<Maodeobra>> ReadAllAsync(DbDataReader reader)
         {
-            var posts = new List<Especialidade>();
+            var posts = new List<Maodeobra>();
             using (reader)
             {
                 while (await reader.ReadAsync())
                 {
-                    var post = new Especialidade(Db)
+                    var post = new Maodeobra(Db)
                     {
                         id = await reader.GetFieldValueAsync<int>(0),
-                        descricao = await reader.GetFieldValueAsync<string>(1)
+                        codigo = await reader.GetFieldValueAsync<string>(1),
+                        descricao = await reader.GetFieldValueAsync<string>(2),
+                        precohora = await reader.GetFieldValueAsync<string>(3)
                     };
                     posts.Add(post);
                 }
