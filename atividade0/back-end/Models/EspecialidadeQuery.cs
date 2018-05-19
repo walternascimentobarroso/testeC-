@@ -62,8 +62,8 @@ namespace back_end.Models
                 {
                     var post = new Especialidade(Db)
                     {
-                        Id = await reader.GetFieldValueAsync<int>(0),
-                        Descricao = await reader.GetFieldValueAsync<string>(1)
+                        id = await reader.GetFieldValueAsync<int>(0),
+                        descricao = await reader.GetFieldValueAsync<string>(1)
                     };
                     posts.Add(post);
                 }

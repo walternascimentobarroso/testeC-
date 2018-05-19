@@ -7,8 +7,8 @@ namespace back_end.Models
 {
     public class Especialidade
     {
-        public int Id { get; set; }
-        public string Descricao { get; set; }
+        public int id { get; set; }
+        public string descricao { get; set; }
 
         [JsonIgnore]
         public AppDb Db { get; set; }
@@ -24,7 +24,7 @@ namespace back_end.Models
             cmd.CommandText = @"INSERT INTO `especialidade` (`descricao`) VALUES (@descricao);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
-            Id = (int) cmd.LastInsertedId;
+            id = (int) cmd.LastInsertedId;
         }
 
         public async Task UpdateAsync()
@@ -50,7 +50,7 @@ namespace back_end.Models
             {
                 ParameterName = "@id",
                 DbType = DbType.Int32,
-                Value = Id,
+                Value = id,
             });
         }
 
@@ -60,7 +60,7 @@ namespace back_end.Models
             {
                 ParameterName = "@id",
                 DbType = DbType.String,
-                Value = Descricao,
+                Value = descricao,
             });
         }
 

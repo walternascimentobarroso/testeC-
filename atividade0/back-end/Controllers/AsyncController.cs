@@ -59,7 +59,7 @@ namespace back_end.Controllers
                 var result = await query.FindOneAsync(id);
                 if (result == null)
                     return new NotFoundResult();
-                result.Descricao = body.Descricao;
+                result.descricao = body.descricao;
                 await result.UpdateAsync();
                 return new OkObjectResult(result);
             }
